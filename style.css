@@ -19,6 +19,29 @@ body {
   height: 100vw;
 }
 
+button { 
+  /* text */
+font-weight: bold;
+font-size: 1.6rem;
+align-items: center;
+color: #FFFFFF;
+
+background: #7879F1;
+border-radius: 0 .4rem .4rem 0;
+border: none;
+
+transition: background .3s;
+} 
+
+button:hover {
+  cursor: pointer;
+  background-color: #5e5eeb;
+}
+ 
+.hide {
+  display: none;
+}
+
 main {
   padding: 4.8rem 6.4rem 6.4rem;
   
@@ -33,4 +56,70 @@ main {
 
   /* para centralizar a caixa*/
   margin-top: -12rem;  
+  text-align: center;
+}
+
+
+/* screen 1 */
+
+
+/* Estilização das fontes e positions */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1, p, h2 {
+  color: #34355B;
+}
+
+body, input, button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+p {
+ opacity: .8;
+}
+
+form {
+  margin-top: 4.8rem;
+  /* para tirar os espaços entre o input e o button */
+  display: flex;
+  justify-content: center;
+}
+
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+
+}
+
+input {
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center; 
+
+  /* box configutation */
+  width: 6.3rem;
+  background: #DCE2E9;
+  border-radius: 4px 0px 0px 4px;
+} 
+
+
+/* screen2 */
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+
+  margin-top: 2rem ;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+border-radius: .4rem;
 }

@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <title>Jogo da Adivinhação</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Adivinhação</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <main>
+      <div class="screen1 hide">
+        <h1>Jogo da Adivinhação</h1>
+        <p>Adivinhe o número entre 0 e 10</p>
 
-<body>
-<main> 
-<h2>Jogo da adivinhação</h2>
+        <form action="">
+          <input type="number" />
+          <button>Tentar</button>
+        </form>
+      </div>
 
-<p> Adivinhe o número entre 0 e 10 </p>
-
-</main>
-</body>
+      <div class="screen2">
+        <h2>Acertou em <span> 3 </span> tentativas!</h2>
+        <button>Jogar novamente</button>
+      </div>
+    </main>
+  </body>
 </html>

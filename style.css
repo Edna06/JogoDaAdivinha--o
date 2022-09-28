@@ -16,7 +16,8 @@ body {
   /* para centralizar o meu main na página*/
   display: grid;
   place-items: center;
-  height: 100vw;
+  height: 100vh;
+
 }
 
 button { 

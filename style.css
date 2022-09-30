@@ -10,14 +10,17 @@
 }
 
 body {
-  background: linear-gradient(107.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  background: #CEC7B3;
+  background: -moz-linear-gradient(top, #BB7ACE 0%, #8A97A4 100%, #C59237 100%);
+  background: -webkit-linear-gradient(top, #BB7ACE 0%, #8A97A4 100%, #C59237 100%);
+  background: linear-gradient(to bottom, #BB7ACE 0%, #8A97A4 100%, #C59237 100%);
+  
   font-size: 1.6rem; /* acessibility */
-
+  
   /* para centralizar o meu main na página*/
   display: grid;
   place-items: center;
   height: 100vh;
-
 }
 
 button { 
@@ -25,20 +28,26 @@ button {
 font-weight: bold;
 font-size: 1.6rem;
 align-items: center;
-color: #FFFFFF;
-
-background: #7879F1;
 border-radius: 0 .4rem .4rem 0;
-border: none;
 
-transition: background .3s;
-} 
+cursor: pointer;
 
-button:hover {
-  cursor: pointer;
-  background-color: #5e5eeb;
+color: #090909;
+
+background: #e8e8e8;
+border: 1px solid #e8e8e8;
+transition: all .2s;
+box-shadow: 6px 6px 12px #c5c5c5,
+            -1px -6px 12px #ffffff;
 }
- 
+
+button:active {
+color: #666;
+box-shadow: inset 4px 4px 12px #c5c5c5,
+            inset -4px -4px 12px #ffffff;
+}
+
+
 .hide {
   display: none;
 }
@@ -48,6 +57,10 @@ main {
   
   background: #FFFFFF;  
   box-shadow: 0px .2rem .4rem rgba(0, 0, 0, 0.1);
+  border-left: 3px solid;
+  border-bottom: 3px solid;
+  border-color: #b6b9bc;
+  
   border-radius: .6rem;
 
   
@@ -98,7 +111,6 @@ input, button {
 }
 
 input {
-
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.1rem;
@@ -106,10 +118,11 @@ input {
 
   /* box configutation */
   width: 6.3rem;
-  background: #DCE2E9;
+  background: #edf0f3;
   border-radius: 4px 0px 0px 4px;
+  box-shadow: 6px 6px 12px #c5c5c5,
+            -6px -6px 12px #ffffff;
 } 
-
 
 /* screen2 */
 
@@ -123,4 +136,25 @@ h2 {
 
 .screen2 button {
 border-radius: .4rem;
+}
+
+/* animations */
+
+main {
+  animation: fromTop .7s /*duration */ 0.2s /*delay*/ backwards 
+}
+
+@keyframes fromTop{
+  0% {
+    opacity: 0.2;
+    transform: translateY(-120px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-250px);
+  }
+  100% { 
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
